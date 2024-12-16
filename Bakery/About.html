@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        /* Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/aboutus.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            color: #333;
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center; /* Center the content vertically */
+        }
+
+        /* Container Styles */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+            max-width: 800px; /* Limit the width of the content */
+            width: 90%; /* Make it responsive */
+            margin: 20px; /* Add margin for spacing */
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            color: black;
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        h3, h2 {
+            color: #555;
+            font-size: 25px;
+            text-decoration: underline;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        p {
+            color: #333;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+
+        /* Image Styles */
+        img {
+            width: 100%;
+            max-width: 900px; /* Restrict the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            margin-bottom: 20px;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 1200px) {
+            header h1 {
+                font-size: 2em; /* Slightly decrease header size */
+            }
+
+            h3, h2 {
+                font-size: 22px; /* Slightly decrease subheading size */
+            }
+
+            p {
+                font-size: 14px; /* Decrease paragraph font size */
+            }
+        }
+
+        @media (max-width: 900px) {
+            body {
+                background-color: rgba(51, 51, 51, 0.8); /* Darker background for better contrast */
+            }
+
+            header h1 {
+                font-size: 1.8em; /* Further decrease header size */
+            }
+
+            .container {
+                background-color: rgba(255, 255, 255, 0.95); /* Slightly lighter container */
+            }
+
+            h3, h2 {
+                font-size: 20px; /* Further decrease subheading size */
+            }
+
+            p {
+                font-size: 13px; /* Further decrease paragraph font size */
+            }
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.5em; /* Further decrease header size */
+            }
+
+            h3, h2 {
+                font-size: 18px; /* Further decrease subheading size */
+            }
+
+            p {
+                font-size: 12px; /* Further decrease paragraph font size */
+            }
+
+            img {
+                height: auto; /* Ensure images maintain aspect ratio on small screens */
+            }
+        }
+
+        @media (max-width: 400px) {
+            .container {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+
+            p {
+                margin-bottom: 10px; /* Reduce spacing below paragraphs */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>About Us</h1>
+        </header>
+        <hr>
+        <h3>Our Passion</h3>
+        <p>We believe in making good bread. 
+           As we’ve grown, so has our menu and our community, yet our values have stayed the same.
+           We take the time to make our bread, pastries, cakes, breakfasts, and lunches as we always have – with care, by hand and according to the season – so that we don’t need to compromise on what we eat, whether we’re on the go or taking time out in one of our bakeries.
+           Everyone is welcome in our bakeries. 
+           We believe in the power of community, in helping those around us, and living as sustainably as possible. 
+           We insist on the finest ingredients, supporting small businesses wherever we can, and though we’re always innovating, our baking is based on time-honoured techniques and our decades-old starters. 
+           Nothing gives us as much pleasure as a freshly baked, lovingly crafted loaf.</p>
+        <img src="Images/bread.jpg" alt="Our bread">
+
+        <h2>Our Story</h2>
+        <p>We bake fresh, handmade bread, pastries, and cakes every day, served with our carefully-sourced house blend specialty coffee. 
+           We take great pleasure in using the best ingredients we can find for food and drink, using seasonal ingredients from suppliers we trust.
+           Though we’ve grown over the years, our philosophy has remained the same: to make good food that people love, and create bakeries that people want to keep coming back to. 
+           Second, only to the love for our mother doughs, we take the most joy from daily chats with our regular customers, many of whom have been with us since we started.
+           We hope you’ll join us soon.</p>
+        <img src="Images/abt.jpg" alt="About us">
+
+        <h2>Join Us</h2>
+        <p>We are looking to grow our team. Help us reinvent the neighbourhood bakery and join us in our love of baking.</p>
+        <img src="Images/joinus.jpg" alt="Join us">
+    </div>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Us - Bakery</title>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+    <main>
+        <form action="contact" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Write your message here"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+</body>
+</html>
+
+<style>
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("Images/broo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    color: white;
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.7);
+    padding-top: 90px;
+}
+
+/* Main container styling */
+main {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%; /* Make it responsive */
+    margin-top: 40px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: #6b0c0c;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #550909;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 30px; /* Decrease header size */
+    }
+
+    main {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    input, textarea {
+        font-size: 10px; /* Decrease font size for inputs */
+    }
+
+    button {
+        font-size: 12px; /* Decrease button font size */
+    }
+}
+
+@media (max-width: 400px) {
+    main {
+        padding: 10px; /* Further reduce padding */
+        margin-top: 5px;
+    }
+
+    header h1 {
+        font-size: 28px; /* Further decrease header size */
+        margin-bottom: 3px;
+    
+    }
+
+    input, textarea {
+        font-size: 10px; /* Further decrease font size for inputs */
+    }
+
+    button {
+        font-size: 12px; /* Further decrease button font size */
+    }
+}
+</style>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakery & Cafe - Location</title>
+    <style>
+        /* Body Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url("Images/loca.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; /* Cover the entire viewport */
+            background-position: center;
+            background-attachment: fixed;
+            font-family: "Helvetica Neue", Helvetica, sans-serif;
+            color: #333;
+            min-height: 100vh; /* Full viewport height */
+            display: flex;
+            justify-content: center; /* Center the content */
+            align-items: center; /* Center the content vertically */
+        }
+
+        /* Container Styles */
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* White with slight transparency */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+            max-width: 800px; /* Limit the width of the content */
+            width: 90%; /* Make it responsive */
+            margin: 20px; /* Add margin for spacing */
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333; /* Darker shade for section headers */
+            border-bottom: 2px solid #333; /* Underline for headers */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            color: #555;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+
+        p {
+            margin: 0;
+            text-align: center;
+        }
+
+        ul {
+            padding-left: 20px;
+            text-align: center;
+        }
+
+        /* Image Styles */
+        .photo-gallery {
+            display: flex;
+            gap: 20px; /* Space between images */
+            flex-wrap: wrap; /* Wrap images on smaller screens */
+            margin-left: auto;
+            margin-right: auto;
+}
+        
+        .photo-gallery img {
+            width: 100%;
+            max-width: 700px; /* Restrict the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+            margin-left: auto;
+            margin-right: auto;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em; /* Decrease header size */
+    }
+
+    h2 {
+        font-size: 1.5em; /* Adjust section header size */
+    }
+
+    h3 {
+        font-size: 1.2em; /* Adjust subheader size */
+    }
+
+    p, ul {
+        font-size: 14px; /* Decrease text size for better readability */
+    }
+
+    .photo-gallery img {
+        max-width: 100%; /* Allow images to take full width */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5em; /* Further decrease header size */
+    }
+
+    h2 {
+        font-size: 1.3em; /* Further adjust section header size */
+    }
+
+    h3 {
+        font-size: 1.1em; /* Further adjust subheader size */
+    }
+
+    p, ul {
+        font-size: 12px; /* Further decrease text size */
+    }
+
+    .container {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bakery & Cafe - Location</h1>
+        </header>
+        <br>
+        <main>
+            <section id="location">
+                <h2>Our Location</h2>
+                <h3><strong>Address:</strong></h3>
+                <p>143 Brick Lane, London E1 6RU, United Kingdom</p>
+                <br>
+                <h3>Hours of Operation:</h3>
+                <ul>
+                    <li>Monday - Friday: 7 AM - 7 PM</li>
+                    <li>Saturday: 8 AM - 8 PM</li>
+                    <li>Sunday: Closed</li>
+                </ul>
+            </section>
+            
+            <section id="photos">
+                <h2>Inside & Outside Views</h2>
+                <div class="photo-gallery">
+                    <img src="Images/out.jpg" alt="Exterior of the Bakery" />
+                    <img src="Images/back.jpg" alt="Interior of the Bakery" />
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

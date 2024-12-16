@@ -1,0 +1,278 @@
+/* Remove text decoration from all elements */
+* {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;/* Remove default margin */
+    padding: 0;/* Remove default padding */
+    background-image: url("Images/bg.jpg");
+    background-repeat: no-repeat;/* Prevent background image from repeating */
+    background-size: cover;/* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed;/* Fix the background image when scrolling */
+    color: black;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;/* Prevent scrolling */
+}
+
+/* Style for the navigation bar */
+nav.navbar {
+    display: flex;/* Use flexbox for layout */
+    justify-content: space-between;/* Space out items evenly */
+    align-items: center; /* Center items vertically */
+    background-color: #533b3b;
+    padding: 0 20px; /* Add left and right padding for space */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the logo image */
+#logo {
+    height: 80px;
+    width: 80px;
+    margin-right: 30px;
+}
+
+/* Style for the navigation list */
+ul {
+    list-style-type: none; /* Remove bullet points from list */
+    padding: 0;
+    margin: 0;
+    display: inline-block; /* Display list items properly */
+}
+
+/* Style for each list item in the navigation */
+li {
+    margin-right: 100px; /* Space between list items */
+    text-transform: capitalize;
+    font-size: large;
+    display: inline-block;/* Use inline-block to align list items in center */
+    text-decoration: underline;
+}
+
+/* Style for the navigation links */
+nav.navbar ul li a {
+    color: white;
+    font-weight: normal;
+    text-decoration: underline;/* Fix: changed from 'white underline' */
+}
+
+/* Focus state for navigation links */
+nav.navbar ul li a:focus {
+    outline: none; /* Remove any outline */
+    color: rgb(107, 12, 12); /* Change the color on focus as you would on hover */
+}
+
+/* Hover state for navigation links */
+nav.navbar ul li a:hover {/* mouse over link */
+    color: rgb(145, 52, 52);
+    text-decoration: underline;
+}
+
+nav.navbar ul li a:active { /* selected link */
+    color: rgb(107, 12, 12);
+    text-decoration: underline;
+}
+
+/* Style for the main heading */
+h2 {
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+    font-size: 60px;
+    text-transform: capitalize;
+    font-family: 'Bodoni MT Black', serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px rgba(223, 7, 7, 0.7); /* Add text shadow for outline effect */
+}
+
+/* Container for the order button */
+.button-container {
+    height: 100vh;
+    display: flex; /* Align the button container horizontally */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for the "Order Now" button */
+.button {
+    background-color: rgb(107, 12, 12);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 20px;
+    margin-bottom: 550px;
+    cursor: pointer;/* Change cursor to pointer on hover */
+}
+
+/* Hover state for the "Order Now" button */
+.button:hover {
+    background-color: rgb(130, 20, 20); /* Darken background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus state for the "Order Now" button */
+.button:focus {
+    outline: 2px solid #fff;
+}
+
+/* Active state for the "Order Now" button */
+.button:active {
+    background-color: rgb(80, 1, 1);
+}
+
+/* Container for authentication buttons (Login & Sign Up) */
+.auth-buttons {
+    display: flex;/* Align buttons in a row */
+    margin-left: auto;/* Push buttons to the right */
+    gap: 10px;/* Adds a gap between buttons */
+}
+
+/* Style for the authentication buttons */
+.button2 {
+    background-color: rgb(80, 1, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    font-size: 16px;
+    height: 40px;
+    cursor: pointer;/* Change cursor to pointer on hover */
+}
+
+/* Hover state for authentication buttons */
+.button2:hover {
+    background-color: rgb(136, 30, 30);
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Focus state for authentication buttons */
+.button2:focus {
+    outline: 2px solid #fff;
+}
+
+/* Active state for authentication buttons */
+.button2:active {
+    background-color: rgb(109, 17, 17);
+    transform: scale(0.98);
+}
+
+/* Style for the footer */
+footer {
+    background-color: #533b3b;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Fix the footer at the bottom */
+    bottom: 0;/* Align to the bottom */
+    left: 0; /* Align to the left */
+    width: 100%;
+    display: flex;/* Use flexbox for layout */
+    justify-content: center;/* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Style for the footer list */
+footer ul {
+    list-style-type: none; /* Remove bullet points */
+    display: flex;/* Display list items in a row */
+    gap: 30px; /* Add space between items */
+    padding: 0; /* Remove padding */
+    margin-left: 50px;
+}
+
+/* Style for footer links */
+footer a {
+    color: white;
+    font-size: 14px;
+}
+
+/* Hover state for footer links */
+footer a:hover {
+    color: #866464;
+}
+
+
+/* Mobile Media Query */
+@media only screen and (max-width: 768px) {
+
+    /* Navbar: Stack items vertically on small screens */
+    nav.navbar {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    li {
+        margin-right: 0;
+        font-size: 16px;
+    }
+
+    #logo {
+        height: 50px;
+        width: 50px;
+    }
+
+    h2 {
+        font-size: 40px;
+        padding-top: 50px;
+    }
+
+    .button {
+        font-size: 18px;
+        padding: 15px 25px;
+    }
+
+    .button-container {
+        height: auto;
+        padding: 20px;
+    }
+
+    footer ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    /* Navbar: Further reduce padding and space */
+    nav.navbar {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 24px;
+        padding-top: 200px;
+    }
+
+    .button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    footer {
+        padding: 5px 0;
+    }
+
+    footer ul {
+        gap: 8px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+}
